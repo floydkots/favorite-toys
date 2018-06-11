@@ -15,6 +15,7 @@
  */
 package com.example.android.asynctaskloader;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.AsyncTaskLoader;
@@ -176,6 +177,7 @@ public class MainActivity extends AppCompatActivity implements
         mErrorMessageDisplay.setVisibility(View.VISIBLE);
     }
     // COMPLETED (3) Override onCreateLoader
+    @SuppressLint("StaticFieldLeak")
     @Override
     public Loader<String> onCreateLoader(int id, final Bundle args) {
         // COMPLETED (4) Return a new AsyncTaskLoader<String> as an anonymous inner class with this as the constructor's parameter

@@ -18,6 +18,7 @@
 
 
     <!-- Strings for Notifications and Toasts -->
+    <string name="main_notification_channel_name">Main Notification</string>
     <string name="water_chug_toast">GLUG GLUG GLUG</string>
 
     <string name="charging_reminder_notification_title">Device Charging - Where\'s that water?</string>
